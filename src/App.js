@@ -78,8 +78,20 @@ function App() {
                       </div>
 
                       <div className="input_amount_block">
-                        <Input placeholder="Amount" className="" />
-                        <Input placeholder="Interest Rate" className="" />
+                        <div className="dropdown">
+                          <FloatingLabel label={"Amount"} editorId={editorId}>
+                            <Input id={editorId} />
+                          </FloatingLabel>
+                        </div>
+
+                        <div className="dropdown">
+                          <FloatingLabel
+                            label={"Interest Rate"}
+                            editorId={editorId}
+                          >
+                            <Input id={editorId} />
+                          </FloatingLabel>
+                        </div>
                       </div>
                     </div>
 
